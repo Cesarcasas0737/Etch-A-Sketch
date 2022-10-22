@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title"> <h1>Etch-A-sketch</h1> </div>
+        <div class="content">
+            <div class="board"></div>
+            
+            <div class="toolKit">
+                <button onclick="penToBlack()">Black</button>
+                <button onclick="penToWhite()">White</button>
+                <button onclick="penToRGB()">randomRGB</button>
+                <button onclick="reset();">Reset</button>
+                <div>
+                    <input type="text" placeholder="Size of Board" value="16" onchange=" changeSize(this.value)"/>
+                    <button>Set Size</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
