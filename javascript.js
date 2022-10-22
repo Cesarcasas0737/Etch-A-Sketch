@@ -10,9 +10,8 @@ function populateBoard(size){
 
     let amount = size * size;
     for (let i = 0; i <amount; i++){
-
         let square = document.createElement("div");
-        square.addEventListener('mouseover',colorSquare);//magic here
+        square.addEventListener('mouseover',colorSquare);
         square.style.backgroundColor = "white";
         //square.style.outline = "thick solid #0000FF"; //see the grid lines
         board.insertAdjacentElement("beforeend", square);
@@ -21,7 +20,6 @@ function populateBoard(size){
 
 populateBoard(4);
 
-//
 function changeSize(input){
   if (input <=2){
     alert("Value is Too Low, Try a value no less then 2");
@@ -35,7 +33,7 @@ function changeSize(input){
 }
 
 function colorSquare(){
-    if(color === "random"){
+    if (color === "random"){
         this.style.backgroundColor = randomRGB();
     }else{
         this.style.backgroundColor = color;
